@@ -1,0 +1,61 @@
+.cuadradito {
+    border : 2px solid black;
+    width: 450px;
+    display: inline-block;
+    height: 450px;
+    margin: 1.0em;
+}
+
+.imgPokemon {
+    height: 300px;
+    width: 300px;
+    margin-top: 2.0em;
+}
+
+.nombrePokemon {
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.divNombrePokemon {
+    margin-top: 1.0em;
+}
+
+.btnFormulario {
+    padding: 1.0em;
+    width: 8em;
+    font-size: 1.2em;
+}
+
+.btnPrevious {
+    background-color: red;
+}
+
+.btnNext {
+    background-color: green;
+}
+
+.divBotones {
+    display: flex;
+    padding: 1.0em 4.0em;
+}
+
+.divPrevious {
+    flex:1;
+    text-align: left;
+}
+
+.tipos {
+    display: flex;
+    margin-top: 1.0em;
+}
+
+.divTipo {
+    flex: 1;
+}
+
+.nombreTipo {
+    background-color: gray;
+    padding: 0.5em 1.5em;
+    border-radius: 1.0em;
+}

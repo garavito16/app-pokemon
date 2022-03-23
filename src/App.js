@@ -6,16 +6,17 @@ import { useState } from 'react';
 
 function App() {
 
-  const [isSubmit,setIsSubmit] = useState(null);
+  const [ruta,setRuta] = useState(null);
+  const [cantidad,setCantidad] = useState(0);
 
-  const cambiarEstado = () => {
-    setIsSubmit(true);
+  const cambiarRuta = (ruta) => {
+    setRuta(ruta);
   }
 
   return (
     <div className="App">
-      <Formulario cambiarEstado={cambiarEstado}/>
-      <Lista isSubmit={isSubmit}/>
+      <Formulario cambiarRuta={cambiarRuta} setCantidad={setCantidad}/>
+      <Lista ruta={ruta} setRuta={setRuta} cantidad={cantidad} setCantidad={setCantidad}/>
     </div>
   );
 }

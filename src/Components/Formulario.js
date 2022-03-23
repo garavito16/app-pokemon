@@ -1,14 +1,16 @@
-import React from "react"
+import React from "react";
+import './Formulario.css';
 
 const Formulario = (props) => {
 
     const cambiar = () => {
-        props.cambiarEstado();
+        props.cambiarRuta("https://pokeapi.co/api/v2/pokemon/?limit=51&offset=0");
+        props.setCantidad(0);
     }
     
     return(
         <div>
-            <button onClick={cambiar}>
+            <button className="botoncito" onClick={cambiar}>
                 Fetch Pokemon
             </button>
         </div>
